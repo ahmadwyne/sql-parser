@@ -1,0 +1,30 @@
+# ANTLR Generated Files
+CreateTableSQLLexer.java
+CreateTableSQLParser.java
+CreateTableSQLListener.java
+CreateTableSQLVisitor.java
+CreateTableSQLBaseListener.java
+CreateTableSQLBaseVisitor.java
+
+# Build artifacts
+build/
+lib/
+*.class
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+*.log
