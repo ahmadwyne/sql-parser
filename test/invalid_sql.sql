@@ -1,0 +1,10 @@
+﻿CREATE TABLE users;
+CREAT TABLE products (id INT);
+CREATE TABLE (id INT);
+CREATE TABLE bad_types (id INVALIDTYPE PRIMARY KEY);
+CREATE TABLE incomplete (id INT, name VARCHAR(100);
+CREATE TABLE no_paren id INT, name VARCHAR(100));
+CREATE TABLE dup_pk (id INT PRIMARY KEY PRIMARY KEY);
+CREATE TABLE missing_col (INT PRIMARY KEY);
+CREATE TABLE missing_type (id);
+CREATE TABLE extra_comma (id INT,, name VARCHAR(100));

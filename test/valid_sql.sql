@@ -1,0 +1,10 @@
+﻿CREATE TABLE users (id INT PRIMARY KEY, name VARCHAR(255));
+CREATE TABLE IF NOT EXISTS products (id INT, title VARCHAR(100), price DECIMAL(10,2));
+CREATE TABLE order_items (id INT PRIMARY KEY, order_id INT NOT NULL);
+CREATE TABLE email_accounts (id INT PRIMARY KEY, email VARCHAR(255) UNIQUE NOT NULL);
+CREATE TABLE course_enrollments (student_id INT NOT NULL, course_id INT NOT NULL, PRIMARY KEY(student_id, course_id));
+CREATE TABLE invoices (invoice_id INT PRIMARY KEY, customer_id INT NOT NULL, amount DECIMAL(15,2) NOT NULL, status VARCHAR(20) DEFAULT 'PENDING');
+CREATE TABLE sensor_data (sensor_id BIGINT PRIMARY KEY, reading_value FLOAT NOT NULL);
+CREATE TABLE file_storage (file_id INT PRIMARY KEY, file_name VARCHAR(255) NOT NULL);
+CREATE TABLE employees (emp_id INT PRIMARY KEY, first_name VARCHAR(50) NOT NULL);
+CREATE TABLE large_table (id INT PRIMARY KEY, data VARCHAR(500), flag BOOLEAN);
